@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cupcakeFrosting" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8DEFF"/>
+      <stop offset="50%" stop-color="#CBB7F5"/>
+      <stop offset="100%" stop-color="#A2D2FF"/>
+    </linearGradient>
+    <linearGradient id="cupcakeCup" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD6E8"/>
+      <stop offset="100%" stop-color="#FFB3D9"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#B8A7EA" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g filter="url(#softGlow)">
+    <!-- Cup -->
+    <path d="M28 55 L35 88 C35.5 90 38 92 41 92 L59 92 C62 92 64.5 90 65 88 L72 55 Z" fill="url(#cupcakeCup)" stroke="#FFA0CB" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Pleats -->
+    <line x1="38" y1="56" x2="43" y2="90" stroke="#FF8EC2" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="50" y1="56" x2="50" y2="91" stroke="#FF8EC2" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="62" y1="56" x2="57" y2="90" stroke="#FF8EC2" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <!-- Frosting Base Layer -->
+    <path d="M22 55 C22 47 30 47 35 48 C37 42 45 40 50 42 C55 39 65 41 66 48 C72 47 78 49 78 55 C78 60 72 61 68 60 C64 61 58 60 50 61 C42 60 36 61 32 60 C26 61 22 59 22 55 Z" fill="url(#cupcakeFrosting)"/>
+    <!-- Frosting Mid Swirl -->
+    <path d="M28 47 C28 38 38 35 44 38 C47 32 58 31 63 37 C70 38 72 46 68 49 C60 45 38 43 28 47 Z" fill="#E8DEFF"/>
+    <!-- Frosting Top Swirl -->
+    <path d="M38 36 C38 28 47 24 50 25 C54 24 62 27 60 35 C55 32 44 32 38 36 Z" fill="#FFFFFF"/>
+    <!-- Cherry / Strawberry Topping -->
+    <circle cx="50" cy="20" r="7" fill="#FF5C8D"/>
+    <path d="M49 14 Q52 8 58 9" stroke="#70C1B3" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="48" cy="18" r="2" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Sprinkles -->
+    <circle cx="36" cy="46" r="1.5" fill="#FF8EC2"/>
+    <circle cx="48" cy="43" r="1.5" fill="#70B6F6"/>
+    <circle cx="62" cy="46" r="1.5" fill="#FFD166"/>
+    <circle cx="42" cy="33" r="1.2" fill="#B8A7EA"/>
+    <circle cx="56" cy="34" r="1.2" fill="#FF8EC2"/>
+  </g>
+</svg>

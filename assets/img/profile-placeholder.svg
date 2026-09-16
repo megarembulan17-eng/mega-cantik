@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE7FA"/>
+      <stop offset="45%" stop-color="#E2EDFD"/>
+      <stop offset="100%" stop-color="#FCEEF4"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8A7EA"/>
+      <stop offset="50%" stop-color="#A2D2FF"/>
+      <stop offset="100%" stop-color="#FFC8DD"/>
+    </linearGradient>
+
+    <!-- Inner Card Gradient -->
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F6F4FD"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#B8A7EA" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="500" height="500" rx="40" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Decorative Circles/Bubbles in Background -->
+  <circle cx="80" cy="90" r="45" fill="#FFFFFF" opacity="0.45"/>
+  <circle cx="420" cy="110" r="35" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="410" cy="410" r="50" fill="#FFFFFF" opacity="0.35"/>
+  <circle cx="90" cy="420" r="30" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- Sparkles -->
+  <path d="M120 160 Q120 175 105 175 Q120 175 120 190 Q120 175 135 175 Q120 175 120 160 Z" fill="#FFAFCC" opacity="0.7"/>
+  <path d="M380 180 Q380 195 365 195 Q380 195 380 210 Q380 195 395 195 Q380 195 380 180 Z" fill="#9D85E2" opacity="0.6"/>
+  <path d="M370 330 Q370 342 358 342 Q370 342 370 354 Q370 342 382 342 Q370 342 370 330 Z" fill="#A2D2FF" opacity="0.8"/>
+
+  <!-- Inner Soft Card with Glow -->
+  <rect x="50" y="50" width="400" height="400" rx="34" fill="url(#innerGrad)" stroke="url(#borderGrad)" stroke-width="3.5" filter="url(#cardGlow)"/>
+
+  <!-- Center Avatar Circle Frame -->
+  <circle cx="250" cy="205" r="85" fill="#F0EDFB" stroke="url(#borderGrad)" stroke-width="3"/>
+  <circle cx="250" cy="205" r="76" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- Cute Character Silhouette / Portrait Icon -->
+  <!-- Hair & Head Silhouette -->
+  <circle cx="250" cy="180" r="32" fill="#B8A7EA"/>
+  <!-- Hair Bow -->
+  <path d="M236 150 Q243 154 250 152 Q257 154 264 150 Q268 158 261 161 Q250 156 239 161 Z" fill="#FFAFCC"/>
+  <circle cx="250" cy="154" r="4.5" fill="#FF8EC2"/>
+  <!-- Shoulder & Collar -->
+  <path d="M198 250 C198 218 220 214 250 214 C280 214 302 218 302 250 Z" fill="#A2D2FF"/>
+  <path d="M240 214 L250 226 L260 214 Z" fill="#FFFFFF"/>
+
+  <!-- Small Camera / Photo Badge on corner -->
+  <g transform="translate(295, 240)">
+    <circle cx="16" cy="16" r="18" fill="#FFAFCC" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M9 13 L11 11 L15 11 L17 13 L23 13 C24 13 25 14 25 15 L25 21 C25 22 24 23 23 23 L9 23 C8 23 7 22 7 21 L7 15 C7 14 8 13 9 13 Z" fill="#FFFFFF"/>
+    <circle cx="16" cy="18" r="3.5" fill="#FFAFCC"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="340" font-family="'Quicksand', 'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="700" fill="#423B68" text-anchor="middle" letter-spacing="0.5">
+    Foto Profil Egaa
+  </text>
+  
+  <text x="250" y="372" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="500" fill="#756D94" text-anchor="middle">
+    Mega Rembulan Maharani ♡
+  </text>
+
+  <g transform="translate(160, 395)">
+    <rect x="0" y="0" width="180" height="28" rx="14" fill="#F0EDFB" stroke="#D7C7FC" stroke-width="1.2"/>
+    <text x="90" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="600" fill="#7B61D1" text-anchor="middle">
+      ✨ Format foto siap diganti
+    </text>
+  </g>
+</svg>

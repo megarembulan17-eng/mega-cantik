@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="macaronTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D7C7FC"/>
+      <stop offset="100%" stop-color="#B8A7EA"/>
+    </linearGradient>
+    <linearGradient id="macaronBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BDE0FE"/>
+      <stop offset="100%" stop-color="#90C7FE"/>
+    </linearGradient>
+    <filter id="macaronGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#B8A7EA" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#macaronGlow)">
+    <!-- Top Shell -->
+    <path d="M18 45 C18 28 32 20 50 20 C68 20 82 28 82 45 C82 47 79 48 50 48 C21 48 18 47 18 45 Z" fill="url(#macaronTop)"/>
+    <!-- Top Shell Highlight -->
+    <path d="M30 28 C40 24 60 24 70 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+    <!-- Top Ruffle Foot -->
+    <path d="M18 45 Q26 49 34 46 Q42 50 50 46 Q58 50 66 46 Q74 50 82 45 L82 49 Q74 53 66 50 Q58 53 50 50 Q42 53 34 50 Q26 53 18 49 Z" fill="#9D85E2"/>
+    <!-- Cream Filling -->
+    <path d="M22 49 C22 49 50 47 78 49 C80 54 80 57 78 60 C50 62 22 62 22 57 Z" fill="#FFF9E6"/>
+    <!-- Bottom Ruffle Foot -->
+    <path d="M18 61 Q26 58 34 61 Q42 58 50 61 Q58 58 66 61 Q74 58 82 61 L82 65 Q74 62 66 65 Q58 62 50 65 Q42 62 34 65 Q26 62 18 65 Z" fill="#70B6F6"/>
+    <!-- Bottom Shell -->
+    <path d="M18 63 C18 65 21 66 50 66 C79 66 82 65 82 63 C82 78 68 84 50 84 C32 84 18 78 18 63 Z" fill="url(#macaronBottom)"/>
+  </g>
+</svg>
